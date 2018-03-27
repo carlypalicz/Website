@@ -1,4 +1,5 @@
-n: 40px;
+*{
+	margin: 40px;
 	border: 5px;
 	padding: 5px;
 }
