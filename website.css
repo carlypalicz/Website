@@ -1,0 +1,112 @@
+n: 40px;
+	border: 5px;
+	padding: 5px;
+}
+
+body
+{
+	background-color: #BFC8EC;
+
+}
+
+#title /**"Carly Palicz"**/
+{
+	font-family: 'Courier New', Courier, monospace;
+	margin: 15px 25px;
+	color: black;
+	text-align: center;
+}
+
+#top /**Links to the other pages**/
+{
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+}
+
+#top ul
+{
+	background-color: #7e94ec;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#top li {
+	display: inline-block;
+	list-style: none;
+	
+	
+}
+
+
+#top a:link, #top a:visited {
+	color:white;
+	text-decoration:none;
+	background-color: #7e94ec;
+	margin: 0;
+	padding: 10;
+	
+}
+
+#top a:hover{
+	background-color: #BFC8EC
+}
+
+#main /** Main text of page**/
+{
+        font: 1em 'DaysRegular', Arial, sans-seriff;
+	overflow: hidden;
+        border-radius: 15px;
+	background: white;
+	box-shadow: 5px 5px 5px black;
+
+}
+#main p /** Paragraph indentation**/
+{
+	text-indent: 15px;
+	
+}
+
+#main input /** Adds border to input form**/
+{
+	border: 2px solid #ffb3cc;
+	border-radius: 4px
+}
+
+#main textarea /**Adds border to text field**/
+{
+	border: 2px solid #ffb3cc;
+	border-radius: 4px
+}
+
+#main ul /**Moves bullets to the right**/
+{
+	margin-left: 15px;
+}
+
+@media screen and (min-width: 830px ) /**Changes format when window/screen size changes**/
+{
+	#top img
+	{
+		display: block;
+		margin: auto;
+		width: 30%;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 830px) /**Changes format when window/screen size changes**/
+{
+	#top img
+	{
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+}
+@media screen and (max-width: 480px) /**Changes format when window/screen size changes**/
+{
+	#top img
+	{
+		display:none;
+	}
+}
+}
