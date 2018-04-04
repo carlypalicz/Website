@@ -1,5 +1,6 @@
 *{
 	margin: 40px;
+	margin-top:0px;
 	border: 5px;
 	padding: 5px;
 }
@@ -7,7 +8,8 @@
 body
 {
 	background-color: #BFC8EC;
-
+	margin-bottom:0px;
+	margin-top:0px;
 }
 
 #title /**"Carly Palicz"**/
@@ -18,71 +20,81 @@ body
 	text-align: center;
 }
 
-#top /**Links to the other pages**/
+#top 
 {
 	font-family: 'Courier New', Courier, monospace;
 	text-align: center;
+	
 }
 
-#top ul
+
+#top ul 
 {
 	background-color: #7e94ec;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
-#top li {
+#top li 
+{
 	display: inline-block;
-	list-style: none;
-	
+	list-style: none;	
+	margin-top:10px;
+	margin-bottom:10px;
 	
 }
-
 
 #top a:link, #top a:visited {
 	color:white;
 	text-decoration:none;
-	background-color: #7e94ec;
 	margin: 0;
-	padding: 10;
-	
+	padding: 50;
+	display: block;
 }
 
-#top a:hover{
-	background-color: #BFC8EC
+
+#top li a:hover{
+	background-color:black; 
 }
 
 #main /** Main text of page**/
 {
-        font: 1em 'DaysRegular', Arial, sans-seriff;
+	font: 1em 'DaysRegular', Arial, sans-seriff;
 	overflow: hidden;
-        border-radius: 15px;
+    border-radius: 3px;
 	background: white;
 	box-shadow: 5px 5px 5px black;
+
 
 }
 #main p /** Paragraph indentation**/
 {
+	margin-top:30px;
 	text-indent: 15px;
+	padding-bottom:0px;
+	padding-right:0px;
+	margin-right:0px;
+	line-height:30px;
+	margin-bottom:0px;
 	
-}
-
-#main input /** Adds border to input form**/
-{
-	border: 2px solid #ffb3cc;
-	border-radius: 4px
-}
-
-#main textarea /**Adds border to text field**/
-{
-	border: 2px solid #ffb3cc;
-	border-radius: 4px
 }
 
 #main ul /**Moves bullets to the right**/
 {
-	margin-left: 15px;
+	margin-left: 250px;
+	padding-top:30px;
+	border:0px;
+	list-style-type:circle;
+	line-height:0px;
+	padding-bottom:0px;
+}
+
+#main li
+{
+	padding-bottom:0px;
+	
 }
 
 @media screen and (min-width: 830px ) /**Changes format when window/screen size changes**/
@@ -109,5 +121,113 @@ body
 	{
 		display:none;
 	}
+}
+
+
+
+/**the CSS for the slideshow is below**/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 50%;
+  max-height: 250px;
+  position: relative;
+  margin: auto;
+ padding: 0px;
+ 
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+	width: 100%;
+	margin: auto;
+	margin-left: -6.5%;
+	
+	
+	
+
+}
+
+
+/*Next & previous buttons*/ 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  margin-top: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text 
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  line-height:15px;
+}
+*/
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 }
